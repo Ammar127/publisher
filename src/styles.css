@@ -395,7 +395,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #edf1f5; }
+  background-color: white; }
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -1897,7 +1897,7 @@ textarea.form-control {
   box-shadow: 0 0 0 0.2rem rgba(0, 194, 146, 0.25); }
 
 .invalid-feedback {
-  
+
   width: 100%;
   margin-top: 0.25rem;
   font-size: 100%;
@@ -3825,7 +3825,7 @@ input[type="button"].btn-block {
   border-radius: 0.25rem; }
 
 .breadcrumb-item + .breadcrumb-item {
-  padding-left: 0.5rem; 
+  padding-left: 0.5rem;
 
 }
   .breadcrumb-item + .breadcrumb-item::before {
@@ -3841,7 +3841,7 @@ input[type="button"].btn-block {
   text-decoration: none; }
 
 .breadcrumb-item.active a {
-  color: #03a9f3 !important; 
+  color: #03a9f3 !important;
 }
 
 .pagination {
@@ -18645,7 +18645,7 @@ ol li {
   margin: 5px 0; }
 
 /*******************
-Padding margin property 
+Padding margin property
 *******************/
 html body .m-t-5 {
   margin-top: 5px; }
@@ -19196,7 +19196,7 @@ Labels
         width: 30px;
         border-radius: 100%; }
       .topbar .top-navbar .profile-pic span {
-        font-size: 14px;
+        font-size: 18px;
         white-space: nowrap; }
     .topbar .top-navbar .navbar-nav > .nav-item > .nav-link {
       padding-left: 15px;
@@ -19748,7 +19748,7 @@ Custom-select
   appearance: none;
   background-size: none; }
 
-/*******************  
+/*******************
 textarea
 ******************/
 textarea {
@@ -19857,7 +19857,7 @@ Form summernote
 .label {
   display: inline-block; }
 
-/*============================================================== 
+/*==============================================================
 Form addons page
 ============================================================== */
 /*Bootstrap select*/
@@ -19904,7 +19904,7 @@ Form addons page
 .input-form .btn {
   padding: 8px 12px; }
 
-/*============================================================== 
+/*==============================================================
 Form Material page
  ============================================================== */
 /*Material inputs*/
@@ -19946,13 +19946,13 @@ Form Material page
     border-bottom: 1px solid #fb9678; }
 
 /*******************
-Form validation error 
+Form validation error
 ******************/
 .error .help-block {
   color: #e46a76; }
 
 /*******************
-File Upload 
+File Upload
 ******************/
 .fileupload {
   overflow: hidden;
@@ -20794,7 +20794,7 @@ icons path
 @font-face {
   font-family: 'icomoon';
   /* src: url("fonts/icomoon.ttf?-rdmvgc") format("truetype");*/
- } 
+ }
 
 @font-face {
   font-family: 'simple-line-icons';
@@ -20816,15 +20816,15 @@ icons path
   /* src: url("fonts/materialdesignicons-webfont.ttf") format("truetype"); */
  }
 
-/*============================================================== 
- For all pages 
+/*==============================================================
+ For all pages
  ============================================================== */
 #main-wrapper {
   width: 100%;
   overflow: hidden; }
 
 .page-wrapper {
-  background: #edf1f5;
+  background: white;
   position: relative; }
 
 .container-fluid {
@@ -20849,7 +20849,7 @@ icons path
     .page-titles .breadcrumb li a {
       color: #212529; }
     .page-titles .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
-      
+
       font-family: themify;
       color: #ced4da;
       font-size: 11px; }
@@ -21878,7 +21878,7 @@ html body .navbar-dark .mailbox .message-center {
   .news-slide .overlaybg img {
     width: 100%; }
 
-/*============================================================== 
+/*==============================================================
 widget-chart-page product review
  ============================================================== */
 .product-review {
@@ -21934,14 +21934,14 @@ File: scss
  *	12. Forms
  *	14. Component
  */
-/*============================================================== 
- For Desktop & above all (1650px) 
+/*==============================================================
+ For Desktop & above all (1650px)
  ============================================================== */
-/*============================================================== 
- For Laptop & above all (1370px) 
+/*==============================================================
+ For Laptop & above all (1370px)
  ============================================================== */
-/*-- ============================================================== 
- Small Desktop & above all (1024px) 
+/*-- ==============================================================
+ Small Desktop & above all (1024px)
  ============================================================== */
 @media (min-width: 1024px) {
   .page-wrapper, .footer {
@@ -21955,8 +21955,8 @@ File: scss
     .d-flex.no-block {
       display: flex !important; } }
 
-/*-- ============================================================== 
- Ipad & above all(768px) 
+/*-- ==============================================================
+ Ipad & above all(768px)
  ============================================================== */
 @media (min-width: 768px) {
   .navbar-header {
@@ -21970,8 +21970,8 @@ File: scss
     display: inline-block;
     line-height: 40px; } }
 
-/*-- ============================================================== 
- Phone and below ipad(767px) 
+/*-- ==============================================================
+ Phone and below ipad(767px)
  ============================================================== */
 @media (max-width: 767px) {
   .container-fluid {

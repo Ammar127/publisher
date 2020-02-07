@@ -9,12 +9,12 @@
                   <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
                   <!-- Dark Logo icon -->
               <!-- <h3>M</h3> -->
-              <img src="../assets/logo.png" alt="" height="40" width="50">
+              <!-- <img src="../assets/logo.png" alt="" height="40" width="50"> -->
                   <!-- Light Logo icon -->
-          
+
               </b>
               <!--End Logo icon -->
-              <span *ngIf="isCollapse" class="hidden-xs" style="">Med<span class="font-bold" style="">Fest</span></span>
+              <span *ngIf="isCollapse" class="hidden-xs" style="">Shishtawi<span class="font-bold" style="">App</span></span>
           </a>
       </div>
       <!-- ============================================================== -->
@@ -25,7 +25,7 @@
           <!-- toggle and nav items -->
           <!-- ============================================================== -->
           <ul class="navbar-nav mr-auto">
-                
+
               <!-- This is  -->
               <li class="nav-item"> <a class="nav-link nav-toggler d-block d-md-none waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
               <li class="nav-item"> <a (click)="collapse()" class="nav-link sidebartoggler d-none d-lg-block d-md-block waves-effect waves-dark" href="javascript:void(0)"><i class="fa fa-bars"></i></a> </li>
@@ -39,7 +39,7 @@
                       placeholder="Search & enter" [(ngModel)]="userSearchQuery">
                       <!-- <div class="dropdown-menu" ngbDropdownMenu *ngIf="users.length > 0 && userSearchQuery !== ''">
                           <a class="dropdown-item" (click)="selectUser(item)" ngbDropdownItem *ngFor="let item of users">{{item.username}} -- {{item.name}}</a>
-                              
+
                           </div> -->
                   </div>
               </li>
@@ -52,7 +52,8 @@
               <!-- Comment -->
               <!-- ============================================================== -->
               <li class="nav-item dropdown" ngbDropdown   >
-                  <a class="nav-link dropdown-toggle waves-effect waves-dark" ngbDropdownToggle  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-clipboard"></i>
+                  <a class="nav-link dropdown-toggle waves-effect waves-dark" ngbDropdownToggle  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span>Notifications <i class="fa fa-bell"></i></span>
                       <div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
                   </a>
                   <div ngbDropdownMenu   class="dropdown-menu dropdown-menu-right mailbox animated bounceInDown">
@@ -101,8 +102,9 @@
               <!-- Messages -->
               <!-- ============================================================== -->
               <li  ngbDropdown class="nav-item dropdown">
-                  <a ngbDropdownToggle class="nav-link dropdown-toggle waves-effect waves-dark" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-envelope"></i> 
-                      <div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
+                  <a ngbDropdownToggle class="nav-link dropdown-toggle waves-effect waves-dark" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span>Support </span><i class="fa fa-life-ring"></i>
+                      <!-- <div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div> -->
                   </a>
                   <div ngbDropdownMenu  class="dropdown-menu mailbox dropdown-menu-right animated bounceInDown" aria-labelledby="2">
                       <ul>
@@ -149,7 +151,7 @@
               <!-- ============================================================== -->
               <!-- mega menu -->
               <!-- ============================================================== -->
-            
+
               <!-- ============================================================== -->
               <!-- End mega menu -->
               <!-- ============================================================== -->
@@ -157,7 +159,11 @@
               <!-- User Profile -->
               <!-- ============================================================== -->
               <li ngbDropdown class="nav-item dropdown u-pro">
-                  <a ngbDropdownToggle class="nav-link dropdown-toggle waves-effect waves-dark profile-pic" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img  [src]="imageSrc" alt="user" class=""> <span class="hidden-md-down pl-2">{{'Tobias'}} &nbsp;<i class="fa fa-angle-down"></i></span> </a>
+                  <a ngbDropdownToggle class="nav-link dropdown-toggle waves-effect waves-dark profile-pic" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <!-- <img  [src]="imageSrc" alt="user" class=""> -->
+                     <span class="hidden-md-down pl-2">{{'Account ID:123456789'}} &nbsp;<i class="fa fa-angle-down"></i>
+                    </span>
+                   </a>
                   <div ngbDropdownMenu  class="dropdown-menu dropdown-menu-right animated flipInY">
                       <!-- text-->
                       <!-- <a href="javascript:void(0)" class="dropdown-item"><i class="ti-user"></i> My Profile</a> -->

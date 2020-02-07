@@ -14,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
+import { MyappsComponent } from './myapps/myapps.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { HomeComponent } from './home/home.component';
       SidebarComponent,
       LoginComponent,
       SignupComponent,
-      HomeComponent
+      HomeComponent,
+      MyappsComponent
    ],
    imports: [
       BrowserModule,
