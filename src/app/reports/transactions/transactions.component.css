@@ -1,0 +1,10 @@
+.bg-white{
+  border-radius: 7px;
+}
+.dataTables_filter input:focus {
+  outline: none;
+  background-image: linear-gradient(purple, purple), linear-gradient(#e9ecef, #e9ecef);
+  background-size: 100% 2px, 100% 1px;
+  box-shadow: none;
+  transition-duration: 0.3s;
+}

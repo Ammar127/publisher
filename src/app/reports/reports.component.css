@@ -1,0 +1,21 @@
+.bg-white{
+  border-radius: 7px;
+}
+a {
+  color: #000;
+  text-decoration: none;
+  background-color: transparent;
+  padding: 20px;
+}
+a:hover{
+  color: #000;
+  text-decoration: none;
+  background-color: transparent;
+}
+a.show{
+  border-bottom: 4px solid #df4500;
+}
+.active{
+  border-bottom: 4px solid #df4500;
+  font-weight: bold;
+}

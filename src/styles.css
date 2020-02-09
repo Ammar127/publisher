@@ -395,7 +395,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: white; }
+  background-color: #edf1f5; }
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -3652,7 +3652,7 @@ input[type="button"].btn-block {
   background-color: #fff;
   background-clip: border-box;
   border: 0px solid transparent;
-  border-radius: 0px; }
+  border-radius: 7px; }
   .card > hr {
     margin-right: 0;
     margin-left: 0; }
@@ -19746,7 +19746,9 @@ Custom-select
   -moz-appearance: none;
   -o-appearance: none;
   appearance: none;
-  background-size: none; }
+  background-size: none;
+  background-color: white;
+ }
 
 /*******************
 textarea
@@ -20824,7 +20826,7 @@ icons path
   overflow: hidden; }
 
 .page-wrapper {
-  background: white;
+  background: #edf1f5;
   position: relative; }
 
 .container-fluid {

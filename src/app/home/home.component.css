@@ -55,6 +55,7 @@ a {
 .widget-extra-full {
   position: relative;
   padding: 12px;
+  background: white;
 }
 
 .widget .widget-content-light {

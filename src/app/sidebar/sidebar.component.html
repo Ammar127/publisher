@@ -18,13 +18,13 @@
                             </ul>
                         </li> -->
                      <!-- <hr> -->
-                        <li> <a [routerLink]="['/app/dash']"  (click)="showMenuFunv(2)"  routerLinkActive="active" class="waves-effect waves-dark " >
+                        <li> <a [routerLink]="['/app/home']"  (click)="showMenuFunv(2)"  routerLinkActive="active" class="waves-effect waves-dark " >
                           <i class="fas fa-chart-line"></i><span class="hide-menu">Analytics</span></a>
                         </li>
                         <li> <a [routerLink]="['/app/dash']"  (click)="showMenuFunv(2)"  routerLinkActive="active" class="waves-effect waves-dark " >
                           <i class="fas fa-list-ul"></i><span class="hide-menu">Custom Reports</span></a>
                         </li>
-                        <li> <a [routerLink]="['/app/dash']"  (click)="showMenuFunv(2)"  routerLinkActive="active" class="waves-effect waves-dark " >
+                        <li> <a [routerLink]="['/app/myapps']"  (click)="showMenuFunv(2)"  routerLinkActive="active" class="waves-effect waves-dark " >
                           <i class="fas fa-th-large"></i><span class="hide-menu">My Apps</span></a>
                         </li>
 
@@ -32,8 +32,8 @@
                           <a class="has-arrow waves-effect waves-dark" [ngClass]="{'active': showMenu == 3}" (click)="showMenuFunv(3)" href="javascript:void(0)" aria-expanded="false">
                             <i class="fas fa-usd-circle"></i><span class="hide-menu">My Payments</span></a>
                             <ul aria-expanded="false" [ngClass]="{'collapse': showMenu != 3}">
-                                <li><a  [routerLink]="['/app/contacts']">Reports</a></li>
-                                <li><a  [routerLink]="['/app/contact']">Settings</a></li>
+                                <li><a  [routerLink]="['/app/reports']">Reports</a></li>
+                                <li><a  [routerLink]="['/app/settings']">Settings</a></li>
 
                             </ul>
                         </li>
