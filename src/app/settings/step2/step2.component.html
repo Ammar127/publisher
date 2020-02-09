@@ -1,0 +1,66 @@
+<div class="container-fluid">
+  <div class="mb-5" style="padding-top: 30px;">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="content clearfix">
+          <!-- Step 2 -->
+          <section role="tabpanel" aria-labelledby="steps-uid-0-h-1" class="body"
+            aria-hidden="true">
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="location1">Payment Method :</label>
+                  <select class="custom-select form-control" id="location1" name="location">
+                    <option value="">Select a Payment Method</option>
+                    <option value="Amsterdam">Wire Transfer</option>
+                    <option value="Berlin">PayPal</option>
+                    <option value="Frankfurt">Hold My Payments</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="firstName1">First Name :</label>
+                  <input type="text" class="form-control" id="firstName1"> </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="lastName1">Last Name :</label>
+                  <input type="text" class="form-control" id="lastName1"> </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="emailAddress1">Email Address :</label>
+                  <input type="email" class="form-control" id="emailAddress1"> </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="location1">Payment Currency :</label>
+                  <select class="custom-select form-control" id="location1" name="location">
+                    <option value="">Select Currency</option>
+                    <option value="Amsterdam">USD</option>
+                    <option value="Berlin">AUD</option>
+                    <option value="Frankfurt">CHF</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="actions clearfix">
+          <ul role="menu" aria-label="Pagination">
+            <li class="" aria-disabled="false"><a [routerLink]="['/app/settings/step1']" role="menuitem">Previous</a></li>
+            <li aria-hidden="true" aria-disabled="true" class="disabled" style="display: none;"><a href="javascript:void(0)"
+                role="menuitem">Next</a></li>
+            <li aria-hidden="false"><a [routerLink]="['/app/settings/step3']" role="menuitem">Submit</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

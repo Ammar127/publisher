@@ -2,20 +2,20 @@
   border-radius: 7px;
 }
 a {
-  color: #000;
+  color: #8d97ad;
   text-decoration: none;
   background-color: transparent;
   padding: 20px;
 }
 a:hover{
-  color: #000;
+  color: #6f42c1;
   text-decoration: none;
   background-color: transparent;
 }
 a.show{
-  border-bottom: 4px solid #df4500;
+  border-bottom: 4px solid #fb9678;
 }
 .active{
-  border-bottom: 4px solid #df4500;
-  font-weight: bold;
+  color: #6f42c1;
+  border-bottom: 4px solid #fb9678;
 }

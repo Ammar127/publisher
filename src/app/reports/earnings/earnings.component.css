@@ -2,11 +2,23 @@
 .bg-white{
   border-radius: 7px;
 }
-.dataTables_filter input:focus {
-  outline: none;
-  background-image: linear-gradient(purple, purple), linear-gradient(#e9ecef, #e9ecef);
-  background-size: 100% 2px, 100% 1px;
-  box-shadow: none;
-  transition-duration: 0.3s;
-}
 
+.dataTables_filter {
+  text-align: right;
+}
+.dataTables_filter label {
+  font-weight: normal;
+  white-space: nowrap;
+  text-align: left;
+}
+.dataTables_filter input {
+  margin-left: 0.5em;
+  display: inline-block;
+  width: auto;
+}
+.dataTables_filter .form-control {
+  color: #888;
+  background-color: #fff;
+  box-shadow: none;
+  height: 30px;
+}
