@@ -1,11 +1,11 @@
 .form-control{
   color: #888;
   background-color: #fff;
-  border: 1px solid #ced4da;
+
   box-shadow: none;
   height: 43px;
 }
-.text-muted{
+.text-muted-1{
 font-weight: 550;
 color: #646464 !important;
 font-size: 1rem;
@@ -58,5 +58,24 @@ font-size: 13.5px;
 .lower{
   margin-top: 20px;
   margin-bottom: 10px;
+}
+.dataTables_filter {
+  text-align: right;
+}
+.dataTables_filter label {
+  font-weight: normal;
+  white-space: nowrap;
+  text-align: left;
+}
+.dataTables_filter input {
+  margin-left: 0.5em;
+  display: inline-block;
+  width: auto;
+}
+.dataTables_filter .form-control {
+  color: #888;
+  background-color: #fff;
+  box-shadow: none;
+  height: 30px;
 }
 

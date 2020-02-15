@@ -11,7 +11,9 @@ const routes: Routes = [
   // {
   //   path: '',  component: LandingComponent
   // },
-
+  {
+    path: '' , pathMatch: 'full', redirectTo: 'app/home'
+  },
   {
     path: 'login' , component: LoginComponent
   },
@@ -22,7 +24,8 @@ const routes: Routes = [
       },
         {path : 'home' , component: HomeComponent},
         {path : 'myapps' , component: MyappsComponent},
-        { path : 'reports' ,  loadChildren: () => import('./reports/reports.module').then(m => m.ReportsModule)}
+        { path : 'reports' ,  loadChildren: () => import('./reports/reports.module').then(m => m.ReportsModule)},
+        { path : 'settings' ,  loadChildren: () => import('./settings/settings.module').then(m => m.SettingsModule)}
 
 
     ]

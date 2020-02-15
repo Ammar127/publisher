@@ -10,10 +10,10 @@ import { ReportsComponent } from './reports.component';
 const routes: Routes = [
   {
     path: '' , component: ReportsComponent , children: [
-      { path: 'earning' , component: EarningsComponent },
-      { path : '' , pathMatch: 'full' , redirectTo: 'earning'},
-      { path : 'transaction' , component: TransactionsComponent}
 
+      { path : 'transaction' , component: TransactionsComponent},
+      { path : '' , pathMatch: 'full' , redirectTo: 'earning'},
+      { path: 'earning' , component: EarningsComponent },
     ]
 
   }

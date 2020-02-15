@@ -1,0 +1,88 @@
+<div class="container-fluid">
+  <div class="bg-clr mb-5" style="padding-top: 30px;">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="content clearfix">
+          <!-- Step 1 -->
+          <section role="tabpanel" aria-labelledby="steps-uid-0-h-0" class="body current"
+            aria-hidden="false" style="">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="firstName1">First Name :</label>
+                  <input type="text" class="form-control" id="firstName1"> </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="lastName1">Last Name :</label>
+                  <input type="text" class="form-control" id="lastName1"> </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="emailAddress1">Email Address :</label>
+                  <input type="email" class="form-control" id="emailAddress1"> </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="phoneNumber1">Phone Number :</label>
+                  <input type="tel" class="form-control" id="phoneNumber1"> </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="Address1">Address 1 :</label>
+                  <input type="text" class="form-control" id="emailAddress1"> </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="Address2">Address 2 :</label>
+                  <input type="text" class="form-control" id="phoneNumber1"> </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="City">City :</label>
+                  <input type="text" class="form-control" id="emailAddress1"> </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="Zip">Zip :</label>
+                  <input type="text" class="form-control" id="phoneNumber1"> </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="location1">Select Country :</label>
+                  <select class="custom-select form-control" id="location1" name="location">
+                    <option value="">Select Country</option>
+                    <option value="Amsterdam">India</option>
+                    <option value="Berlin">USA</option>
+                    <option value="Frankfurt">Dubai</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="date1">Date of Birth :</label>
+                  <input type="date" class="form-control" id="date1"> </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="actions clearfix">
+          <ul role="menu" aria-label="Pagination">
+            <li class="" aria-disabled="false"><a href="javascript:void(0)" role="menuitem">Previous</a></li>
+            <li aria-hidden="true" aria-disabled="true" class="disabled" style="display: none;"><a href="javascript:void(0)"
+                role="menuitem">Next</a></li>
+            <li aria-hidden="false" style=""><a [routerLink]="['/app/settings/step2']" role="menuitem">Submit</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
