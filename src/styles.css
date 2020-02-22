@@ -19088,7 +19088,8 @@ ul.list-style-none {
 Card
 ******************/
 .card {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+}
   .card .card-subtitle {
     font-weight: 300;
     margin-bottom: 15px;
