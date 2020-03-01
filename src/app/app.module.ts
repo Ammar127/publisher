@@ -7,7 +7,6 @@ import { CoreComponent } from './core/core.component';
 import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { LoginComponent } from './login/login.component';
-import { SignupComponent } from './signup/signup.component';
 
 import { HttpClientModule } from '@angular/common/http';
 
@@ -24,7 +23,6 @@ import { MyappsComponent } from './myapps/myapps.component';
       HeaderComponent,
       SidebarComponent,
       LoginComponent,
-      SignupComponent,
       HomeComponent,
       MyappsComponent
    ],
