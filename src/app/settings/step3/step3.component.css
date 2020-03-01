@@ -358,7 +358,7 @@ input {
 .steps {
   display: inline;
   float: left;
-  width: 20%
+  width: 20%;
 }
 
 .steps>ul>li {
