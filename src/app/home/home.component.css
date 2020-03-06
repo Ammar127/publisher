@@ -98,3 +98,29 @@ h6{
   margin-bottom: 20px;
 }
 }
+.table thead th, .table th {
+  letter-spacing: 1px;
+  text-align: center;
+}
+.table td {
+  text-align: center;
+}
+.dataTables_filter {
+  text-align: right;
+}
+.dataTables_filter label {
+  font-weight: normal;
+  white-space: nowrap;
+  text-align: left;
+}
+.dataTables_filter input {
+  margin-left: 0.5em;
+  display: inline-block;
+  width: auto;
+}
+.dataTables_filter .form-control {
+  color: #888;
+  background-color: #fff;
+  box-shadow: none;
+  height: 30px;
+}
