@@ -31,8 +31,9 @@
 }
 
 .card-common:hover {
-  box-shadow: 2px 3px 15px #999999;
-  transform: translateY(-1px);
+  cursor: auto
+  /* box-shadow: 2px 3px 15px #999999; */
+  /* transform: translateY(-1px); */
 }
 
 a.widget {
