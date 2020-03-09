@@ -1,26 +1,4 @@
-input {
-  border: 0;
-  background-image: linear-gradient(#fb9678, #fb9678), linear-gradient(#e9ecef, #e9ecef);
-  background-size: 0 2px, 100% 1px;
-  background-repeat: no-repeat;
-  background-position: center bottom, center calc(100% - 1px);
-  background-color: transparent;
-  transition: background 0s ease-out;
-  float: none;
-  box-shadow: none;
-  border-radius: 0;
-  margin-left: 10px;
-}
-  input:focus {
-    outline: none;
-    background-image: linear-gradient(#fb9678, #fb9678), linear-gradient(#e9ecef, #e9ecef);
-    background-size: 100% 2px, 100% 1px;
-    box-shadow: none;
-    transition-duration: 0.3s;
-   }
-   label {
-    font-weight: 400;
-  }
+
 .bg-clr{
   border-radius: 7px;
 }
@@ -34,7 +12,9 @@ input {
   display: block;
   width: 100%
 }
-
+label {
+  font-weight: 400;
+}
 
 .steps .current-info {
   position: absolute;

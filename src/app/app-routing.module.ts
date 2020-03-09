@@ -4,6 +4,8 @@ import { LoginComponent } from './login/login.component';
 import { CoreComponent } from './core/core.component';
 import { HomeComponent } from './home/home.component';
 import { MyappsComponent } from './myapps/myapps.component';
+import { AddappComponent } from './addapp/addapp.component';
+
 
 
 
@@ -25,6 +27,7 @@ const routes: Routes = [
       },
         {path : 'home' , component: HomeComponent},
         {path : 'myapps' , component: MyappsComponent},
+        {path : 'addapp' , component: AddappComponent},
         { path : 'reports' ,  loadChildren: () => import('./reports/reports.module').then(m => m.ReportsModule)},
         { path : 'settings' ,  loadChildren: () => import('./settings/settings.module').then(m => m.SettingsModule)},
 

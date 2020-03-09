@@ -7,16 +7,18 @@
         </div>
         <div class="col-md-5">
         <div class="d-flex justify-content-md-end">
-        <a href="" class="btn btn-primary mr-2"><span>App-ads.txt</span> </a>
-        <a href="" class="btn btn-warning"><i class="fas fa-plus"></i>&nbsp; <span>Add New App</span> </a>
+        <a [routerLink]="['/app/addapp']"  class="btn btn-warning"><i class="fas fa-plus"></i>&nbsp; <span>New App</span> </a>
       </div>
     </div>
   </div>
   <div class="row mb-4">
     <div class="col-md-2">
-      <input type="text" placeholder="Feb 02, 2020" class="form-control">
+      <input type="text" placeholder="From all time" class="form-control">
     </div>
     <div class="col-md-2">
+      <input type="text" placeholder="To Feb 02, 2020" class="form-control">
+    </div>
+    <!-- <div class="col-md-2">
       <div class="input-group mb-3">
         <select class="custom-select" id="inputGroupSelect01">
           <option selected>Apps (All)</option>
@@ -25,8 +27,8 @@
           <option value="3">Three</option>
         </select>
       </div>
-    </div>
-    <div class="col-md-2">
+    </div> -->
+    <!-- <div class="col-md-2">
       <div class="input-group mb-3">
         <select class="custom-select" id="inputGroupSelect01">
           <option selected>Countries</option>
@@ -35,8 +37,8 @@
           <option value="3">Three</option>
         </select>
       </div>
-    </div>
-    <div class="col-md-2">
+    </div> -->
+    <!-- <div class="col-md-2">
       <div class="input-group mb-3">
         <select class="custom-select" id="inputGroupSelect01">
           <option selected>Ad Types</option>
@@ -45,32 +47,32 @@
           <option value="3">Three</option>
         </select>
       </div>
-    </div>
-    <div class="col-md-4">
+    </div> -->
+    <!-- <div class="col-md-4">
     <div class="d-flex justify-content-md-end">
     <a href="" class="btn btn-light mr-2"><span>Clear</span> </a>
     <a href="" class="btn btn-success"><span>Apply</span> </a>
   </div>
+</div> -->
 </div>
-</div>
-            <div class="row mb-5">
-              <div class="col-md-2">
+            <div class="row mb-3">
+              <div class="col-md-3">
                   <a href="javascript:void(0)" class="widget widget-hover-effect2 text-center card-common">
                       <div class="widget-extra bg-info">
                       <h6 class="text-white">Revenue</h6>
                       </div>
-                  <div class="widget-extra-full"><span class="h2 animation-expandOpen">$0.00</span></div>
+                  <div class="widget-extra-full"><span class="h2 animation-expandOpen">$2340.00</span></div>
                   </a>
               </div>
-              <div class="col-md-2">
+              <div class="col-md-3">
                   <a href="javascript:void(0)" class="widget widget-hover-effect2 text-center card-common">
                       <div class="widget-extra bg-warning">
                       <h6 class="text-white">Impressions</h6>
                       </div>
-                  <div class="widget-extra-full"><span class="h2 animation-expandOpen">0</span></div>
+                  <div class="widget-extra-full"><span class="h2 animation-expandOpen">4540</span></div>
                   </a>
               </div>
-              <div class="col-md-2">
+              <!-- <div class="col-md-2">
                 <a href="javascript:void(0)" class="widget widget-hover-effect2 text-center card-common">
                     <div class="widget-extra bg-primary">
                     <h6 class="text-white">Clicks </h6>
@@ -85,24 +87,84 @@
                   </div>
               <div class="widget-extra-full"><span class="h2 animation-expandOpen">0%</span></div>
               </a>
-          </div>
-          <div class="col-md-2">
+          </div> -->
+          <div class="col-md-3">
             <a href="javascript:void(0)" class="widget widget-hover-effect2 text-center card-common">
                 <div class="widget-extra bg-danger">
-                <h6 class="text-white">eCPM</h6>
+                <h6 class="text-white">CPM</h6>
                 </div>
-            <div class="widget-extra-full"><span class="h2 animation-expandOpen">$0.00</span></div>
+            <div class="widget-extra-full"><span class="h2 animation-expandOpen">$568.00</span></div>
             </a>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-3">
           <a href="javascript:void(0)" class="widget widget-hover-effect2 text-center card-common">
               <div class="widget-extra bg-purpl">
               <h6 class="text-white">Fill Rate</h6>
               </div>
-          <div class="widget-extra-full"><span class="h2 animation-expandOpen">0%</span></div>
+          <div class="widget-extra-full"><span class="h2 animation-expandOpen">50%</span></div>
           </a>
       </div>
             </div>
+            <div class="card border-0 shadow mb-5">
+              <div class="card-body">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="card">
+                        <div class="card-body">
+                          <div id="example23_filter" class="dataTables_filter mb-1 mt-0"><label>Search:<input type="search"
+                            class="form-control form-control-sm" placeholder="" aria-controls="example23"></label>
+                      </div>
+                          <div class="table-responsive">
+                            <table class="table color-table purple-table">
+                              <thead>
+                                <tr>
+                                  <th>App Name</th>
+                                  <th>Impression</th>
+                                  <th>CPM</th>
+                                  <th>Fill Rate</th>
+                                  <th>Revenue</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Facebook</td>
+                                  <td>110</td>
+                                  <td>120.00$</td>
+                                  <td>27%</td>
+                                  <td>450.00$</td>
+                                </tr>
+                                <tr>
+                                  <td>Facebook</td>
+                                  <td>350</td>
+                                  <td>560.00$</td>
+                                  <td>80%</td>
+                                  <td>2340.00$</td>
+                                </tr>
+                                <tr>
+                                  <td>Facebook</td>
+                                  <td>450</td>
+                                  <td>8750.00$</td>
+                                  <td>50%</td>
+                                  <td>670.00$</td>
+                                </tr>
+                                <tr>
+                                  <td>Facebook</td>
+                                  <td>320</td>
+                                  <td>260.00$</td>
+                                  <td>20%</td>
+                                  <td>230.00$</td>
+                                </tr>
+
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                </div>
           </div>
 </section>
 <!-- tables -->

@@ -32,17 +32,17 @@
               <!-- ============================================================== -->
               <!-- Search -->
               <!-- ============================================================== -->
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                   <div ngbDropdown class="app-search d-none d-md-block d-lg-block">
                       <input type="text" ngbDropdownToggle class="form-control"
                       (focus)="searchUser()"  (keyup)="searchUser()"
                       placeholder="Search & enter" [(ngModel)]="userSearchQuery">
-                      <!-- <div class="dropdown-menu" ngbDropdownMenu *ngIf="users.length > 0 && userSearchQuery !== ''">
+                      <div class="dropdown-menu" ngbDropdownMenu *ngIf="users.length > 0 && userSearchQuery !== ''">
                           <a class="dropdown-item" (click)="selectUser(item)" ngbDropdownItem *ngFor="let item of users">{{item.username}} -- {{item.name}}</a>
 
-                          </div> -->
+                          </div>
                   </div>
-              </li>
+              </li> -->
           </ul>
           <!-- ============================================================== -->
           <!-- User profile and search -->
@@ -161,7 +161,7 @@
               <li ngbDropdown class="nav-item dropdown u-pro">
                   <a ngbDropdownToggle class="nav-link dropdown-toggle waves-effect waves-dark profile-pic" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <!-- <img  [src]="imageSrc" alt="user" class=""> -->
-                     <span class="hidden-md-down pl-2">{{'Account ID:123456789'}} &nbsp;<i class="fa fa-angle-down"></i>
+                     <span class="hidden-md-down pl-2">{{'Publisher ID : 123456789'}} &nbsp;<i class="fa fa-angle-down"></i>
                     </span>
                    </a>
                   <div ngbDropdownMenu  class="dropdown-menu dropdown-menu-right animated flipInY">
