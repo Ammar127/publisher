@@ -2,16 +2,23 @@
   <div class="login-register" style="background-image:url(../assets/images/background/login-register.jpg);">
       <div class="login-box card">
           <div class="card-body">
-              <form class="form-horizontal form-material" id="loginform" action="index.html">
+              <form [formGroup]="form" (ngSubmit)="onSubmit()" class="form-horizontal form-material" id="loginform" action="index.html">
                   <h3 class="text-center m-b-20">Sign In</h3>
-                  <div class="form-group ">
+                  <div class="form-group">
                       <div class="col-xs-12">
-                          <input class="form-control" type="text" required="" placeholder="Username"> </div>
+                          <input class="form-control" id="username" formControlName="name" type="text" required="" placeholder="Username"> 
+                          <div *ngIf="isFormSubmitted && f.name.errors && f.name.errors.required">
+                            <div class="text-danger"><small> Username is required</small></div>
+                          </div>
+                        </div>
                   </div>
                   <div class="form-group">
                       <div class="col-xs-12">
-                          <input class="form-control" type="password" required="" placeholder="Password"> </div>
-                  </div>
+                          <input class="form-control" formControlName="password" type="password" required="" placeholder="Password"> </div>
+                          <div *ngIf="isFormSubmitted && f.name.errors && f.name.errors.required">
+                            <div class="text-danger"><small>Password is required</small> </div>
+                          </div>
+                        </div>
                   <div class="form-group row">
                       <div class="col-md-12">
                           <div class="d-flex no-block align-items-center">
