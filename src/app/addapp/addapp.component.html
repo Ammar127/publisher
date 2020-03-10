@@ -118,7 +118,7 @@
                           </div>
                           <div class="col-md-4">
                             <div class="form-group">
-                              <label class="container-check">Comoros
+                              <label class="container-check">India
                                 <input type="checkbox">
                                 <span class="checkmark"></span>
                               </label>
@@ -181,7 +181,7 @@
                         <div class="row">
                           <div class="col-md-4">
                             <div class="form-group">
-                              <label class="container-check">Dijbouti
+                              <label class="container-check">Nigeria
                                 <input type="checkbox">
                                 <span class="checkmark"></span>
                               </label>
@@ -189,7 +189,7 @@
                           </div>
                           <div class="col-md-4">
                             <div class="form-group">
-                              <label class="container-check">Somalia
+                              <label class="container-check">Libya
                                 <input type="checkbox">
                                 <span class="checkmark"></span>
                               </label>
@@ -223,16 +223,6 @@
                           </div>
                           <div class="col-md-4">
                             <div class="form-group">
-                              <label class="container-check">Libya
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                              </label>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-md-4">
-                            <div class="form-group">
                               <label class="container-check">Palestinian Terrorities
                                 <input type="checkbox">
                                 <span class="checkmark"></span>
@@ -247,7 +237,7 @@
                 </div>
                 <div class="row text-right justify-content-center">
                   <div class="col-md-7">
-                    <a href="javascript:void(0)" class="btn btn-primary">Submit</a>
+                    <a href="javascript:void(0)" class="btn btn-primary" (click)="open(content)">Submit</a>
                   </div>
                 </div>
               </div>
@@ -259,3 +249,17 @@
         </div>
       </div>
 </section>
+
+
+<ng-template #content>
+  <div class="modal-header">
+    <h2 class="text-prpl m-0">Message :</h2>
+  </div>
+  <div class="modal-body">
+    <h5 class="text-center">Your app is under review we will notify you once it is approved.</h5>
+
+  </div>
+  <div class="modal-footer">
+      <button type="button" class="btn btn-ok m-0" (click)="onClose()">Ok</button>
+  </div>
+</ng-template>

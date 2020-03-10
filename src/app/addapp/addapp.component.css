@@ -120,3 +120,10 @@ input {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+.btn-ok{
+  color: #b80303;
+  font-size: 22px;
+}
+.text-prpl{
+  color: #4805c5;
+}

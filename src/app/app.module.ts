@@ -15,7 +15,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { MyappsComponent } from './myapps/myapps.component';
 import { AddappComponent } from './addapp/addapp.component';
-import { SignupComponent } from './signup/signup.component';
+import { ModalModule } from 'ngb-modal';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -27,7 +28,6 @@ import { SignupComponent } from './signup/signup.component';
       LoginComponent,
       HomeComponent,
       MyappsComponent,
-      SignupComponent,
       AddappComponent
    ],
    imports: [
@@ -35,7 +35,8 @@ import { SignupComponent } from './signup/signup.component';
       AppRoutingModule,
       ReactiveFormsModule,
       FormsModule,
-      HttpClientModule
+      HttpClientModule,
+      NgbModule
    ],
    providers: [],
    bootstrap: [
