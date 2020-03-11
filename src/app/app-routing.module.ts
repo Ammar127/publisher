@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { MyappsComponent } from './myapps/myapps.component';
 import { AddappComponent } from './addapp/addapp.component';
 import { SignupComponent } from './signup/signup.component';
+import { CustomComponent } from './custom/custom.component';
 
 
 
@@ -21,6 +22,7 @@ const routes: Routes = [
   {
     path: 'login' , component: LoginComponent
   },
+
   { path : 'signup' ,  loadChildren: () => import('./signup/signup.module').then(m => m.SignupModule)},
   {
     path: 'app' , component: CoreComponent , children: [
@@ -28,6 +30,9 @@ const routes: Routes = [
         path: '', redirectTo: 'home', pathMatch: 'full'
       },
         {path : 'home' , component: HomeComponent},
+        {
+          path: 'reportsng' , component: CustomComponent
+        },
         {path : 'myapps' , component: MyappsComponent},
         {path : 'addapp' , component: AddappComponent},
         { path : 'reports' ,  loadChildren: () => import('./reports/reports.module').then(m => m.ReportsModule)},

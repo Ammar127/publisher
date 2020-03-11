@@ -18,6 +18,8 @@ import { AddappComponent } from './addapp/addapp.component';
 import { ModalModule } from 'ngb-modal';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CustomComponent } from './custom/custom.component';
+import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 
 
 @NgModule({
@@ -29,7 +31,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
       LoginComponent,
       HomeComponent,
       MyappsComponent,
-      AddappComponent
+      AddappComponent,
+      CustomComponent
    ],
    imports: [
       BrowserModule,
@@ -38,7 +41,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
       FormsModule,
       HttpClientModule,
       NgbModule,
-      BrowserAnimationsModule
+      BrowserAnimationsModule,
+      NgMultiSelectDropDownModule.forRoot()
    ],
    providers: [],
    bootstrap: [
