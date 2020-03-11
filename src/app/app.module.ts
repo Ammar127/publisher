@@ -17,6 +17,7 @@ import { MyappsComponent } from './myapps/myapps.component';
 import { AddappComponent } from './addapp/addapp.component';
 import { ModalModule } from 'ngb-modal';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
       ReactiveFormsModule,
       FormsModule,
       HttpClientModule,
-      NgbModule
+      NgbModule,
+      BrowserAnimationsModule
    ],
    providers: [],
    bootstrap: [

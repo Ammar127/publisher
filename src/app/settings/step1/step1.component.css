@@ -1,3 +1,5 @@
+
+
 input {
   border: 0;
   background-image: linear-gradient(#fb9678, #fb9678), linear-gradient(#e9ecef, #e9ecef);
@@ -37,6 +39,9 @@ input {
       background-size: 100% 2px, 100% 1px;
       box-shadow: none;
       transition-duration: 0.3s;
+     }
+     option:hover {
+        background-color: #fb9678;
      }
 .bg-clr{
   border-radius: 7px;
@@ -304,7 +309,7 @@ label {
     top: 45px;
     width: 50%;
     height: 3px;
-    background-color: #2962FF
+    background-color: rgb(29, 38, 63)
 }
 
 .steps>ul>li.current:after,
@@ -312,6 +317,7 @@ label {
 .steps>ul>li.current~li:before {
     background-color: #F3F3F3
 }
+
 
 .steps .step {
     width: 50px;
@@ -377,7 +383,7 @@ label {
 .steps {
     display: inline;
     float: left;
-    width: 20%
+    width: 20%;
 }
 
 .steps>ul>li {

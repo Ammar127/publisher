@@ -4,34 +4,30 @@
      
   <div class="row mb-4 mt-2">
     <div class="col-md-2">
-      <input type="text" placeholder="From all time" class="form-control">
+      <div class="form-group mr-md-5">
+        <div class="input-group">
+          <input class="form-control" placeholder="From:  yyyy-mm-dd"
+                 name="dp" [(ngModel)]="model" ngbDatepicker #f="ngbDatepicker">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary calendar" (click)="f.toggle()" type="button"><i class="far fa-calendar-alt text-dark"></i></button>
+          </div>
+        </div>
+      </div> 
     </div>
     <div class="col-md-2">
-      <input type="text" placeholder="To Feb 02, 2020" class="form-control">
-    </div>
-    <div class="col-md-4">
-      <div  class=" push-top">
-        <div  ngbDropdown   class="row mr-3">
-         <p ngbDropdownToggle class="cursor text-bold text-muted mt-2 mr-2">Choose Date:</p>
-        <div ngbDropdownMenu >
-         <ngb-datepicker #dp (dateSelect)="onDateSelection($event)" [displayMonths]="1" [dayTemplate]="t" outsideDays="hidden">
-        </ngb-datepicker>
-        
-          <ng-template #t let-date let-focused="focused">
-            <span class="custom-day"
-                  [class.focused]="focused"
-                  [class.range]="isRange(date)"
-                  [class.faded]="isHovered(date) || isInside(date)"
-                  (mouseenter)="hoveredDate = date"
-                  (mouseleave)="hoveredDate = null">
-              {{ date.day }}
-            </span>
-          </ng-template>
+      <div class="form-group ml-md-5">
+        <div class="input-group">
+          <input class="form-control" placeholder="To:  yyyy-mm-dd"
+                 name="dp" [(ngModel)]="model2" ngbDatepicker #d="ngbDatepicker">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary calendar" (click)="d.toggle()" type="button"><i class="far fa-calendar-alt text-dark"></i></button>
+          </div>
         </div>
-    </div>
-</div>
-    </div>
+      </div> 
+     </div>
     <div class="col-md-4">
+    </div>
+   <div class="col-md-4">
       <div class="d-flex justify-content-md-end">
       <a [routerLink]="['/app/addapp']"  class="btn btn-warning">
         <i class="fas fa-plus"></i>&nbsp; <span>New App</span>
