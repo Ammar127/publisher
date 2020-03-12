@@ -30,10 +30,10 @@
 
                         <li *ngIf="!isAdmin">
                           <a class="has-arrow waves-effect waves-dark" [ngClass]="{'active': showMenu == 3}" (click)="showMenuFunv(3)" href="javascript:void(0)" aria-expanded="false">
-                            <i class="fas fa-usd"></i><span class="hide-menu">My Payments</span></a>
+                            <i class="fas fa-money-bill-wave"></i><span class="hide-menu">My Payments</span></a>
                             <ul aria-expanded="false" [ngClass]="{'collapse': showMenu != 3}">
-                                <li><a  [routerLink]="['/app/reports']">Reports</a></li>
-                                <li><a  [routerLink]="['/app/settings']">Settings</a></li>
+                                <li><a  [routerLink]="['/app/reports']"><i class="fa fa-list mr-2"></i>Reports</a></li>
+                                <li><a  [routerLink]="['/app/settings']"><i class="fas fa-sliders-h mr-2"></i>Settings</a></li>
 
                             </ul>
                         </li>

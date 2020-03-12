@@ -2,6 +2,9 @@
 .bg-white{
   border-radius: 7px;
 }
+.btn-withdraw {
+  cursor: not-allowed;
+}
 
 .dataTables_filter {
   text-align: right;
