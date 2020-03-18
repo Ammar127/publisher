@@ -20,6 +20,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CustomComponent } from './custom/custom.component';
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
       HomeComponent,
       MyappsComponent,
       AddappComponent,
-      CustomComponent
+      CustomComponent,
+      LandingPageComponent
    ],
    imports: [
       BrowserModule,

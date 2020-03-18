@@ -7,6 +7,7 @@ import { MyappsComponent } from './myapps/myapps.component';
 import { AddappComponent } from './addapp/addapp.component';
 import { SignupComponent } from './signup/signup.component';
 import { CustomComponent } from './custom/custom.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 
 
@@ -17,7 +18,7 @@ const routes: Routes = [
   // },
 
   {
-    path: '' , pathMatch: 'full', redirectTo: 'app/home'
+    path: '',  component: LandingPageComponent
   },
   {
     path: 'login' , component: LoginComponent

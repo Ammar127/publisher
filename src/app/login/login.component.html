@@ -1,24 +1,42 @@
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand ml-5" href="#"><img src="../../assets/payfort_logo_clr.png" height="60px" width="120px"
+            alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav text-dark justify-content-center text-uppercase mt-5 mr-auto ml-auto">
+            <li><h2>LETS GET STARTED</h2></li>
+        </ul>
+        <form class="form-inline my-2 mr-5 my-lg-0">
+            <a class="" [routerLink]="['/']">
+            <button class="btn btn-outline-success text-dark rounded-pill text-dark px-5 py-2 my-2 mr-5 my-sm-0" type="submit">
+              Go Back To Home</button></a>
+          
+          </form>
+    </div>
+  </nav>
+  </header>
+<div class="background">
+
+
 <section id="wrapper">
-  <div class="login-register" style="background-image:url(../assets/images/background/login-register.jpg);">
-      <div class="login-box card">
+  <div class="login-register">
+      <div class="login-box card bg-transparent">
           <div class="card-body">
-              <form [formGroup]="form" (ngSubmit)="onSubmit()" class="form-horizontal form-material" id="loginform" action="index.html">
+              <form class="form-horizontal form-material" id="loginform" action="index.html">
                   <h3 class="text-center m-b-20">Sign In</h3>
-                  <div class="form-group">
+                  <div class="form-group ">
                       <div class="col-xs-12">
-                          <input class="form-control" id="username" formControlName="name" type="text" required="" placeholder="Username"> 
-                          <div *ngIf="isFormSubmitted && f.name.errors && f.name.errors.required">
-                            <div class="text-danger"><small> Username is required</small></div>
-                          </div>
-                        </div>
+                          <input class="form-control text-white" type="text" required="" placeholder="Username"> </div>
                   </div>
                   <div class="form-group">
                       <div class="col-xs-12">
-                          <input class="form-control" formControlName="password" type="password" required="" placeholder="Password"> </div>
-                          <div *ngIf="isFormSubmitted && f.name.errors && f.name.errors.required">
-                            <div class="text-danger"><small>Password is required</small> </div>
-                          </div>
-                        </div>
+                          <input class="form-control" type="password" required="" placeholder="Password"> </div>
+                  </div>
                   <div class="form-group row">
                       <div class="col-md-12">
                           <div class="d-flex no-block align-items-center">
@@ -27,27 +45,24 @@
                                   <label class="custom-control-label" for="customCheck1">Remember me</label>
                               </div>
                               <div class="ml-auto">
-                                  <a href="javascript:void(0)" id="to-recover" class="text-muted"><i class="fas fa-lock m-r-5"></i> Forgot pwd?</a>
+                                  <a href="javascript:void(0)" id="to-recover" class="text-white"><i class="fas fa-lock m-r-5"></i> Forgot pwd?</a>
                               </div>
                           </div>
                       </div>
                   </div>
                   <div class="form-group text-center">
                       <div class="col-xs-12 p-b-20">
-                          <button class="btn btn-block btn-lg btn-info btn-rounded" type="submit">Log In</button>
+                          <button class="btn btn-block btn-login btn-lg btn-info btn-rounded" [routerLink]="['/app/home']"   type="submit">Log In</button>
                       </div>
                   </div>
                   <div class="row">
                       <div class="col-xs-12 col-sm-12 col-md-12 m-t-10 text-center">
-                          <div class="social">
-                              <button class="btn  btn-facebook" data-toggle="tooltip" title="" data-original-title="Login with Facebook"> <i aria-hidden="true" class="fab fa-facebook-f"></i> </button>
-                              <button class="btn btn-googleplus" data-toggle="tooltip" title="" data-original-title="Login with Google"> <i aria-hidden="true" class="fab fa-google-plus-g"></i> </button>
-                          </div>
+                         
                       </div>
                   </div>
                   <div class="form-group m-b-0">
                       <div class="col-sm-12 text-center">
-                          Don't have an account? <a href="pages-register.html" class="text-info m-l-5"><b>Sign Up</b></a>
+                          Don't have an account? <a [routerLink]="['../signup']" class="text-dark sign-up m-l-5"><u>Sign Up</u></a>
                       </div>
                   </div>
               </form>
@@ -72,3 +87,4 @@
       </div>
   </div>
 </section>
+</div>

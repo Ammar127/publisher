@@ -7,10 +7,22 @@
   position: absolute;
   z-index: -1;
 }
+.form-control {
+  color: white !important;
+}
 .inputfile-1 + label {
   color: white;
-  background-color: rgba(9, 9, 163, 0.726);
-}
+  color: #ffffff;
+  border: none;
+  
+    background-color: #fb9678;
+    border-color: #fb9678; }
+    
+
+.inputfile-1 + label:hover {
+ 
+  background-color: #fa7953;
+  border-color: #fa6f46; }
 .inputfile + label {
   border-radius: 5px;
   text-overflow: ellipsis;
@@ -35,36 +47,54 @@
   position: relative;
   }
   #msform fieldset {
-  background: white;
+ 
   border: 0 none;
-  border-radius: 3px;
-  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);
+ 
   padding: 20px 30px;
   box-sizing: border-box;
   width: 90%;
   margin: 0 5%;
   /*stacking fieldsets above each other*/
-  position: absolute;
+  /* position: absolute; */
   }
   /*Hide all except first fieldset*/
   #msform fieldset:not(:first-of-type) {
   display: none;
   }
-
+ /* .register-box{
+  background-color: #0BA0BB;
+  background-image: -webkit-linear-gradient(left, #0BA0BB 0%, rgb(8, 175, 204) 50%, #1CA29E 100%);
+  background-image: linear-gradient(to right,  #0BA0BB 0%, rgb(1, 169, 199) 50%, #1CA29E 100%);
+ 
+ } */
+ /* .inputfile-1{
+  color: #ffffff;
+  border: none;
+  background-color: #17ac77;
+  background-image: -webkit-linear-gradient(left, #17ac77 0%, #1aa39b 50%, #17ac77 100%);
+  background-image: linear-gradient(to right, #17ac77 0%, #1aa39b 50%, #17ac77 100%);
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  background-size: 200% 100%;
+  padding: 15px 40px;
+ }
+  */
 #wrapper {
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+ 
+ }
 
 .register-box {
   max-width: 900px;
   margin: 0 auto;
-  padding-top: 2%; }
+   }
   /* .register-box a {
     display: block; } */
 
 .step-register {
   position: absolute;
-  height: 100%; }
+  height: 300px !important; }
 
 @media (max-width: 767px) {
   #msform fieldset,

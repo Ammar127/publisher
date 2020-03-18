@@ -1,4 +1,26 @@
 /*form styles*/
+.btn-outline-success{
+  border: 2px solid black;
+}
+.btn-outline-success:hover{
+  background-color: transparent;
+}
+.nav-link {
+  font-size: 16px;
+  color: black !important;
+  font-weight: 400;
+}
+
+
+
+.step-register{
+  background-color: #0BA0BB;
+  background-image: -webkit-linear-gradient(left, #0BA0BB 0%, rgb(8, 175, 204) 50%, #1CA29E 100%);
+  background-image: linear-gradient(to right,  #0BA0BB 0%, rgb(1, 169, 199) 50%, #1CA29E 100%);
+  color: white;
+  
+}
+
 #msform {
   max-width: 900px;
   margin: 20px auto;
@@ -34,6 +56,7 @@
   font-size: 13px;
   }
   /*buttons*/
+  
   #msform .action-button {
   width: 100px;
   background: #01c0c8;
@@ -120,13 +143,14 @@
 .register-box {
   max-width: 900px;
   margin: 0 auto;
-  padding-top: 2%; }
+ }
   .register-box a {
     display: block; }
 
 .step-register {
   position: absolute;
-  height: 100%; }
+ 
+  height: auto; }
 
 @media (max-width: 767px) {
   #msform fieldset,

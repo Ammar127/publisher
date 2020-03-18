@@ -1,20 +1,28 @@
 /*form styles*/
-#msform {
+/* #msform {
   max-width: 900px;
   margin: 20px auto;
   position: relative;
+  } */
+  .form-control {
+    color: white !important;
   }
+ 
+  option{
+    background-color: gray;
+  }
+  
   #msform fieldset {
-  background: white;
+ 
   border: 0 none;
   border-radius: 3px;
-  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1); */
   padding: 20px 30px;
-  box-sizing: border-box;
-  width: 90%;
+  /* box-sizing: border-box; */
+  width: 100%;
   margin: 0 5%;
   /*stacking fieldsets above each other*/
-  position: absolute;
+  /* position: absolute; */
   }
   /*Hide all except first fieldset*/
   #msform fieldset:not(:first-of-type) {
@@ -26,14 +34,15 @@
   overflow: hidden; }
 
 .register-box {
-  max-width: 900px;
+  /* max-width: 900px; */
   margin: 0 auto;
-  padding-top: 2%; }
+  
+  }
   /* .register-box a {
     display: block; } */
 
 .step-register {
-  position: absolute;
+  /* position: absolute; */
   height: 100%; }
 
 @media (max-width: 767px) {
@@ -41,5 +50,4 @@
   .login-register,
   .step-register {
     position: relative; } }
-
 

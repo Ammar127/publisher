@@ -1,14 +1,54 @@
 
 @import url(https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700);
 
+.btn-outline-success{
+  border: 2px solid black;
+  color: black ;
+}
+.btn-outline-success:hover{
+  background-color: transparent;
+}
+.sign-up{
+  font-size: 18px;
+  font-weight: 400;
+  /* border: 1px solid black;
+  border-radius: 5px; */
+    
+}
 .login-register {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  background-color: #0BA0BB;
+  background-image: -webkit-linear-gradient(left, #0BA0BB 0%, rgb(8, 175, 204) 50%, #1CA29E 100%);
+  background-image: linear-gradient(to right,  #0BA0BB 0%, rgb(1, 169, 199) 50%, #1CA29E 100%);
+  color: white;
+  height: auto;
+  
+}
+::placeholder{
+  color: white !important;
+}
+.form-control {
+  color: white !important;
+}
+.btn-login{
+  color: white;
+  color: #ffffff;
+  border: none;
+  background-color: #fb9678;
+  border-color: #fb9678; }
+    
+
+.btn-login:hover {
+ 
+  background-color: #fa7953;
+  border-color: #fa6f46; }
+.login-register {
+ 
   height: 100%;
   width: 100%;
-  padding: 10% 0;
-  position: fixed; }
+  padding: 2% 0;
+  position: fixed;
+  }
+
 
 .login-box {
   width: 400px;
